@@ -205,11 +205,6 @@ def crunch_random():
             ok_list.append(main_pass)
 
             if ok_count == 10000:
-                out_file = open('/content/drive/My Drive/results/'+str(i) + '.txt', 'w')
-                for t in ok_list:
-                    line = ' '.join(str(x) for x in t)
-                    out_file.write(line + '\n')
-                out_file.close()
                 ok_count = 0
                 ok_list = []
 
